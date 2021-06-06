@@ -1,4 +1,5 @@
 #include<stdlib.h>
 #include<stdio.h>
+#include<string.h>
 
-void printa();
+char* obterSubstring(char* string, int inicio, int fim);
