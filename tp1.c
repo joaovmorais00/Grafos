@@ -68,7 +68,6 @@ int menu(int **matriz, int totalVertices, int totalArestas){
         return 1;
         break;
     case 0:
-        printf("\nentrou 0\n");
         return 0;
         break;
     
@@ -94,6 +93,7 @@ void sumario(int** matriz, int totalVertices, int totalArestas){
     float densidade = (float)totalArestas/(totalVertices*(totalVertices-1));
     printf("Numero de Vertices: %d, Numero de Arestas: %d, Densidade: %.4f", totalVertices, totalArestas, densidade);
 }
+
 void sucessores(int **matriz, int totalVertices, int vertice){
     if(vertice>totalVertices){ 
         printf("\nVertice invalido\n");
@@ -105,6 +105,7 @@ void sucessores(int **matriz, int totalVertices, int vertice){
     }
     printf("\n");
 }
+
 void antecessores(int **matriz, int totalVertices, int vertice){
     if(vertice>totalVertices){ 
         printf("\nVertice invalido\n");
